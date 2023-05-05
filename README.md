@@ -1,70 +1,112 @@
-# Getting Started with Create React App
+# quizGame
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a quiz app that uses the Open Trivia Database (OpenTDB) API to fetch trivia questions from various categories, including history, sports, entertainment, and more. Users can choose the difficulty level of the questions and the number of questions to include in the quiz. The app displays the correct answer if the user's answer is incorrect and keeps track of the user's score throughout the quiz.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Description](#description)
+- [Tech Stack](#tech-stack)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Screenshots](#screenshots)
+- [Demo](#demo)
+- [Disclaimer](#disclaimer)
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Description
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+This is a quiz app that uses the Open Trivia Database (OpenTDB) API to fetch trivia questions from various categories, including history, sports, entertainment, and more. Users can choose the difficulty level of the questions and the number of questions to include in the quiz. The app displays the correct answer if the user's answer is incorrect and keeps track of the user's score throughout the quiz.
 
-### `npm test`
+## Tech Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<h4 align="center">Frontend:</h4>
+<p align="center">
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="javascript" />
+  <img src="https://img.shields.io/badge/chakra-%234ED1C5.svg?style=for-the-badge&logo=chakraui&logoColor=white" alt="chakraui" />
+  <img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" alt="react" />
+  <img src="https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white" alt="redux"/> 
+</p>
 
-### `npm run build`
+<h4 align="center">Deployed On:</h4>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<p align="center">
+  <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="vercerl">
+</p>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Features
 
-### `npm run eject`
+- Choose between different categories of questions, such as history, science, entertainment, sports, and more.
+- Choose the difficulty level of the questions, such as easy, medium, or hard.
+- Choose the number of questions to include in the quiz.
+- Keep track of the user's score throughout the quiz and display it at the end.
+- Allow users to skip questions and come back to them later.
+- Provide feedback on the user's performance, such as a ranking or a grade.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Installation
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Clone the repository
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+git clone https://github.com/khanahmad4527/quiz_game.git
+```
+2. Install dependencies
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+npm install
+```
+3. Start the project
 
-## Learn More
+```bash
+npm run start
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Usage
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+To use quizGame, follow these steps:
 
-### Code Splitting
+1. Open the quiz game website.
+2. Enter your name in the text field provided on the home page.
+3. Choose the category of questions you want to answer from the dropdown menu.
+4. Choose the difficulty level of the questions you want to answer from the dropdown menu.
+5. Choose the number of questions you want to answer from the dropdown menu.
+6. Click the "Start Quiz" button to begin the quiz.
+7. Read the question and select the correct answer from the options provided.
+8. Click the "Next" button to move on to the next question.
+9. Repeat steps 7 and 8 until all questions have been answered.
+10. At the end of the quiz, click the "Submit" button to see your score.
+11. Your final score will be displayed on the screen.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Screenshots
 
-### Making a Progressive Web App
+<div align="center">
+  <h3>Home Page</h3>
+  <img src="https://res.cloudinary.com/dalqx198y/image/upload/v1683266520/Screenshot_429_oejkju.png" width="500">
+</div>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+<div align="center">
+  <h3>Quiz Page</h3>
+  <img src="https://res.cloudinary.com/dalqx198y/image/upload/v1683266516/Screenshot_431_k3zzo8.png" width="500">
+  <img src="https://res.cloudinary.com/dalqx198y/image/upload/v1683266516/Screenshot_432_wzchip.png" width="500">
+</div>
 
-### Advanced Configuration
+<div align="center">
+  <h3>Result Page</h3>
+  <img src="https://res.cloudinary.com/dalqx198y/image/upload/v1683266516/Screenshot_433_mcnipl.png" width="500">
+</div>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+<div align="center">
+  <h3>Dashboard Page</h3>
+  <img src="https://res.cloudinary.com/dalqx198y/image/upload/v1683266516/Screenshot_434_fdvikr.png" width="500">
+</div>
 
-### Deployment
+## Demo
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Check out the demo <a href="https://quiz-game-puce-iota.vercel.app" target="_blank">here</a>
 
-### `npm run build` fails to minify
+## Disclaimer
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This quiz game uses the Open Trivia Database (OpenTDB) API to fetch trivia questions. We do not own or maintain the OpenTDB API, and we cannot guarantee the accuracy or reliability of the data provided by the API.
