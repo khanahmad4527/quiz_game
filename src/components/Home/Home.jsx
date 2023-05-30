@@ -9,9 +9,9 @@ import {
   Button,
   Link,
 } from "@chakra-ui/react";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { authUser } from "../../redux/action";
 
 const initForm = {
@@ -23,6 +23,8 @@ const initForm = {
 
 const Home = () => {
   const [form, setForm] = useState(initForm);
+  const [isLoading, setIsLoading] = useState(false);
+  const { isAuth } = useSelector((store) => store);
 
   const navigate = useNavigate();
 
@@ -37,12 +39,18 @@ const Home = () => {
   const dispatch = useDispatch();
 
   const handleStartQuiz = (e) => {
+    setIsLoading(true);
+
     e.preventDefault();
 
     dispatch(authUser(form.name, form.questions, form.category, form.level));
-
-    navigate("/quiz");
   };
+
+  useEffect(() => {
+    if (isAuth) {
+      navigate("/quiz");
+    }
+  }, [isAuth]);
 
   return (
     <Flex
@@ -143,7 +151,7 @@ const Home = () => {
               />
             </FormControl>
 
-            <Button type="submit" colorScheme="teal">
+            <Button type="submit" colorScheme="teal" isLoading={isLoading}>
               START QUIZ
             </Button>
           </Stack>

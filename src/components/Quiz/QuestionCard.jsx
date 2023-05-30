@@ -33,7 +33,7 @@ const QuestionCard = ({
       </Flex>
 
       <Stack>
-        {question.mcq.length &&
+        {question &&
           question.mcq.map((item, i) => {
             return (
               <Box
